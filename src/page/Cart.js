@@ -5,7 +5,7 @@ import emptyCartImage from "../assest/empty.gif"
 import { toast } from "react-hot-toast";
 import {loadStripe} from '@stripe/stripe-js';
 import { useNavigate } from "react-router-dom";
-const url = 'https://ecomerce-vegetable-backend.vercel.app'
+const url = 'https://ecomerce-vegetable-backend.onrender.com'
 const Cart = () => {
   const productCartItem = useSelector((state) => state.product.cartItem);
   const user = useSelector(state => state.user)

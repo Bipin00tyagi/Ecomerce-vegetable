@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginRedux } from "../redux/userSlice";
 
-const url = 'https://ecomerce-vegetable-backend.vercel.app'
+const url = 'https://ecomerce-vegetable-backend.onrender.com'
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [data, setData] = useState({
