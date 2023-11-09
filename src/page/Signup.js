@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import { ImagetoBase64 } from "../utility/ImagetoBase64";
 import { toast } from "react-hot-toast";
-const url = 'https://ecomerce-vegetable-backend.vercel.app/'
+const url = 'https://ecomerce-vegetable-backend.vercel.app'
 function Signup() {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);

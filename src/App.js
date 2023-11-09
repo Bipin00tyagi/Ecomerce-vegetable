@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { setDataProduct } from "./redux/productSlide";
 import { useDispatch, useSelector } from "react-redux";
 // import Footer from "./component/Footer";
-const url = 'https://ecomerce-vegetable-backend.vercel.app/'
+const url = 'https://ecomerce-vegetable-backend.vercel.app'
 function App() {
   const dispatch = useDispatch()
   const productData = useSelector((state)=>state.product)
