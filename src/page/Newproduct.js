@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import {BsCloudUpload} from "react-icons/bs"
 import { ImagetoBase64 } from '../utility/ImagetoBase64'
-const url = 'https://ecomerce-vegetable-backend.onrender.com'
+import { handleImageUpload } from '../utility/index.js'
+const url = process.env.REACT_APP_SERVER_DOMIN
 const Newproduct = () => {
   const [data,setData] = useState({
     name : "",
@@ -25,8 +26,9 @@ const Newproduct = () => {
   }
 
   const uploadImage = async(e)=>{
-      const data = await ImagetoBase64(e.target.files[0])
-      // console.log(data)
+      // const data = await ImagetoBase64(e.target.files[0])
+      const data = await handleImageUpload(e.target.files[0])
+      console.log(data)
 
       setData((preve)=>{
         return{
@@ -34,6 +36,7 @@ const Newproduct = () => {
           image : data
         }
       })
+      
   }
 
   const handleSubmit = async(e)=>{

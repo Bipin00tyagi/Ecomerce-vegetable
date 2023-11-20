@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 import { ImagetoBase64 } from "../utility/ImagetoBase64";
 import { toast } from "react-hot-toast";
-const url = 'https://ecomerce-vegetable-backend.onrender.com'
+const url = process.env.REACT_APP_SERVER_DOMIN
 function Signup() {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);

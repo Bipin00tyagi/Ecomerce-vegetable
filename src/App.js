@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { setDataProduct } from "./redux/productSlide";
 import { useDispatch, useSelector } from "react-redux";
 // import Footer from "./component/Footer";
-const url = 'https://ecomerce-vegetable-backend.onrender.com'
+const url = process.env.REACT_APP_SERVER_DOMIN
 function App() {
   const dispatch = useDispatch()
   const productData = useSelector((state)=>state.product)
